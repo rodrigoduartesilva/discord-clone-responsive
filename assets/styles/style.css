@@ -6,9 +6,14 @@
 }
 
 body {
+    height: 100vh;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
+
+/*Mobile Inicio*/
+
+/*Header Inicio*/
 
 header {
     height: 505px;
@@ -48,7 +53,7 @@ header p {
 }
 
 .header__button__win, .header__button__nav {
-    width: 381px;
+    width: 90vw;
     height: 54px;
     display: flex;
     justify-content: center;
@@ -67,3 +72,87 @@ header p {
     color: #FFFFFF;
     background-color: #23272A;
 }
+
+/*Header Fim*/
+
+/*Main Inicio*/
+
+.container {
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
+}
+
+.container:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+.container:last-child h2{
+    color: #23272a;
+    font-family: Luckiest Guy;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.container__img {
+    width: 350px;
+    height: 252px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    width: 350px;
+    color: #23272a;
+    font-family: Open Sans;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 27px 0;
+}
+
+.container p {
+    width: 350px;
+    color: #23272a;
+    font-size: 0.875rem;
+    font-family: Open Sans;
+}
+
+/*Main Fim*/
+
+/*Footer Inicio*/
+
+footer {
+    height: 140px;
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 162px;
+    height: 45px;
+}
+
+/*Footer Fim*/
+
+/*Mobile Fim*/
+
+/*Laptop/Desktop Inicio*/
+
+@media screen and(min-width: 1024px) {
+    
+    header {
+       
+        background: url("../img/header_background.png");
+        background-size: cover;
+        
+    }
+    
+}
+
+/*Laptop/Desktop Fim*/
