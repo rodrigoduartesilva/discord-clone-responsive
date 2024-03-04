@@ -144,15 +144,100 @@ footer img {
 
 /*Laptop/Desktop Inicio*/
 
-@media screen and(min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+
+    /*Header Inicio*/
     
     header {
-       
+        height: 459px;
         background: url("../img/header_background.png");
         background-size: cover;
-        
+        background-repeat: no-repeat; 
+    }
+
+    header h1 {
+        width: 313px;
+        font-size: 3.5rem;
+        margin: 0 auto;
+        text-align: center;
+        -webkit-text-stroke-color: #FFFFFF;
+    }
+
+    header p {
+        width: 757px;
+        margin: 24px auto;
+        text-align: center;
+    }
+
+    .header__button {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .header__button__win, .header__button__nav {
+        width: 25vw;
+    }
+
+    /*Header Fim*/
+
+    /*Main Inicio*/
+
+    .container {
+        width: 971px;
+        height: 448px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    .container__img {
+        width: 607px;
+        height: 394px;
     }
     
+    .container h2 {
+        width: 329px;
+        color: #23272a;
+        font-size: 2.5rem;
+    }
+
+    .container p {
+        width: 348px;
+        color: #23272a;
+        font-size: 1rem;
+        font-family: Open Sans;
+    }
+
+    .container:nth-child(even) {
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .container:last-child {
+        height: 744px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container:last-child h2{
+        width: 500px;
+        margin: 0;
+    }
+
+    .container:last-child p{
+        width: 802px;
+        margin: 16px 0;
+    }
+
+    .container__img:last-child {
+        width: 784px;
+        height: 508px;
+    }
+
+
+    /*Main Fim*/
 }
 
 /*Laptop/Desktop Fim*/
